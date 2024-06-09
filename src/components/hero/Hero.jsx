@@ -53,7 +53,7 @@ function Hero() {
                         
                     </ul>
                 </div>
-                <div className='flex top-12 relative'>
+                <div className='flex top-12 sm:top-0 relative'>
                     <div className="flex overflow-hidden w-full h-full">
                     {
                         imageUrls.map((img) => (
