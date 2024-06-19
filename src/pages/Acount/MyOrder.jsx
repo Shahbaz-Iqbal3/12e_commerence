@@ -30,7 +30,7 @@ function MyOrder() {
 					</div>
 				</div>
 				<div className="sm:p-2 sm:px-4 p-1 px-2 text-sm  bg-slate-200 rounded-full text-black border-2 border-slate-800">
-					Cancled
+					Canceled
 				</div>
 			</div>
 

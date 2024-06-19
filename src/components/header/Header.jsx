@@ -69,7 +69,7 @@ function Header() {
 					</div>
 				)}
 
-				<div className="container flex justify-between items-center pt-2 sm:py-4 sticky  z-20 bg-white top-2">
+				<div className="container flex justify-between items-center pt-2 sm:py-4 sticky  z-20 bg-white top-2 select-none">
 					<div className="hidden sm:block">
 						<Link to={"/"}>
 							<Logo />
@@ -99,13 +99,13 @@ function Header() {
 						<div className="sm:hidden ">
 							<Link to={"/"} className="flex flex-col items-center sm:block">
 								<LuHome className="text-2xl " />{" "}
-								<span className="sm:hidden text-sm">Home</span>
+								<span className="sm:hidden text-sm font-[400]">Home</span>
 							</Link>
 						</div>
 						<div className="sm:hidden">
 							<Link to={"/products"} className="flex flex-col items-center sm:block">
 								<LuLayoutGrid className="text-2xl" />{" "}
-								<span className="sm:hidden text-sm">Products</span>
+								<span className="sm:hidden text-sm font-[400]">Products</span>
 							</Link>
 						</div>
 						<div className="relative">
@@ -119,7 +119,7 @@ function Header() {
 								>
 									{cart.length}
 								</div>
-								<span className="sm:hidden text-sm">Cart</span>
+								<span className="sm:hidden text-sm font-[400]">Cart</span>
 							</Link>
 						</div>
 						<div className="relative hidden sm:block">

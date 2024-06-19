@@ -62,7 +62,7 @@ function ProductCard({
 
 	
 	return (
-		<div className="w-[calc(50%-12px)] sm:w-[270px] flex-shrink-0 flex-grow-0 flex flex-col mb-1 p-1 sm:m-3 hover:shadow shadow-md rounded group ">
+		<div className="w-[calc(50%-12px)] sm:w-[270px] flex-shrink-0 flex-grow-0 flex flex-col mb-1 p-1 sm:m-3 hover:shadow-2xl duration-500 hover:scale-[1.02] transition-all shadow-md rounded group ">
 			<div className="w-full sm:h-[270px] flex-grow-0 flex-shrink-0 relative">
 				<Link to={`/product/${product.$id}`}>
 					<img src={appWriteProduct.getFilePreview(product.image)} alt={product.title} className="object-contain aspect-square" />
@@ -81,9 +81,9 @@ function ProductCard({
                      />
 				</div>
 				<div
-					className=" absolute font-primary font-medium bg-black text-white flex justify-center 
-                items-center bottom-0 w-full h-10 rounded-b cursor-pointer opacity-0 group-hover:opacity-100
-                 transition-opacity ease-in duration-200"
+					className=" absolute font-primary sm:font-medium bg-black py-1 bg-opacity-50 sm:bg-opacity-100 text-white flex justify-center 
+                items-center bottom-0 w-full sm:h-10 rounded-b cursor-pointer sm:opacity-0 group-hover:opacity-100
+              text-sm sm:text-base transition-all ease-linear duration-300"
 					onClick={() => addToCartLocal()}
 				>
 					<span>Add TO Cart</span>
