@@ -50,7 +50,7 @@ import EditProduct from "./admin/EditProduct.jsx";
 	},
 	{
 		path: "/",
-		// errorElement: <Error />,
+		errorElement: <Error />,
 		element: <App />,
 		children: [
 			{
